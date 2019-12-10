@@ -107,7 +107,13 @@ def checkDifference():
     else:
         print("Times Checked: {} No Update".format(count))
 
-login()
+def firstRun():
+    login()
+    getGrades()
+    os.replace('new.html', 'old.html')
+
+
+firstRun()
 while True:
     try:
         refreshPage()
