@@ -16,11 +16,11 @@ mv config-example.py config.py
 ```
 Next, build your Docker container with the following:
 ```bash
-docker build -t "enter your tag here" .
+docker build -t FinalGradeUtility .
 ```
 Lastly, simply run the docker container using your preferred arguments. Below is an example to start the container in the background:
 ```bash
-docker run -itd --name FinalsServer "enter tag from above"
+docker run -itd --name FinalsServer FinalGradeUtility
 ```
 # Future Work
 Work is currently underway to allow the use of ``docker pull``  in addition to releasing a ``docker-compopse`` file as apposed to running ``docker build`` yourself.
