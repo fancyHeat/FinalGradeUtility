@@ -113,7 +113,7 @@ while True:
         refreshPage()
         getGrades()
         checkDifference()
-        time.sleep(60)
+        time.sleep(config.update_interval)
     except:
         sendError()
         login()
