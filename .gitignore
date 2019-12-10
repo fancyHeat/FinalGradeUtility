@@ -1,5 +1,5 @@
 .idea/*
-credentials.py
+config.py
 __pycache__/
 env/*
 new.html
