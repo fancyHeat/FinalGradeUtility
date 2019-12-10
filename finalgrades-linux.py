@@ -81,9 +81,12 @@ def sendMail():
 
 def checkDifference():
 
-    if cmp("new.html", "old.html") is False:
-        sendMail()
-        print("changed")
+    try:
+        if cmp("new.html", "old.html") is False:
+            sendMail()
+            print("changed")
+    except:
+        pass
     else:
         print("no change")
 
