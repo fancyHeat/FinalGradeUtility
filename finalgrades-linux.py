@@ -119,6 +119,7 @@ while True:
         refreshPage()
         getGrades()
         checkDifference()
+        count += 1
         time.sleep(config.update_interval)
     except:
         sendError()
