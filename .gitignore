@@ -4,3 +4,4 @@ __pycache__/
 env/*
 new.html
 old.html
+chromedriver.exe

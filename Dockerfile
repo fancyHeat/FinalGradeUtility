@@ -10,7 +10,7 @@ RUN pip install -r /app/requirements.txt \
     && apt install wget unzip chromium -y \
     && wget https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_linux64.zip \
     && unzip /chromedriver_linux64.zip -d /app/ \
-    && rm /chromedriver_linux64.zip
+    && rm /chromedriver_linux64.zip \
     && touch /app/old.html \
-    && touch /app/new.html \
+    && touch /app/new.html
 CMD python /app/finalgrades-linux.py
