@@ -3,7 +3,7 @@
 
 This is a simple build to allow students to be proactively & continuously updated when their final grades for the semester have been entered in to E-services.
 
-## Installation
+# Installation
 
 Initially, you must first clone into the repository using the following:
 
@@ -21,6 +21,10 @@ docker build -t "enter your tag here" .
 Lastly, simply run the docker container using your preferred arguments. Below is an example to start the container in the background:
 ```bash
 docker run -itd --name FinalsServer "enter tag from above"
+```
+If you would like to check the output of your container enter the following:
+```bash
+docker logs -f FinalsServer
 ```
 # Future Work
 Work is currently underway to allow the use of ``docker pull``  in addition to releasing a ``docker-compopse`` file as apposed to running ``docker build`` yourself.
